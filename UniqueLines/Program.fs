@@ -8,7 +8,7 @@ type String with
     member this.IsNullOrWhiteSpace() = String.IsNullOrWhiteSpace(this)
 
 let loadConfig () =
-    let configPath = "cnfig.json"
+    let configPath = "config.json"
 
     if File.Exists(configPath) then
         let configJson = File.ReadAllText(configPath)
